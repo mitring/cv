@@ -1,0 +1,39 @@
+\documentclass[10pt,a4paper,roman]{moderncv}
+
+% moderncv themes
+\moderncvstyle{casual}
+\moderncvcolor{blue}
+\renewcommand{\familydefault}{\rmdefault}
+
+% character encoding
+\usepackage[T1]{fontenc}
+\usepackage[utf8x]{inputenc}
+\usepackage[russian]{babel}
+\usepackage{pscyr}
+\usepackage{cmap}
+
+% adjust the page margins
+\usepackage[scale=0.85]{geometry}
+
+%\addtolength{\hintscolumnwidth}{15.0pt}
+%\addtolength{\maincolumnwidth}{-15.0pt}
+
+\input{contact_ru}
+\input{position_common_ru}
+\extrainfo{\href{https://raw.github.com/mitring/cv/master/prudnikov_cv_ru_full.pdf}{\underline{Подробное резюме}}}
+
+\begin{document}
+ 
+\makecvtitle
+
+\input{pers_ru}
+
+\input{edu_ru}
+
+\input{exp_ru_short}
+
+\input{skill_ru}
+
+\input{lang_ru}
+
+\end{document}
