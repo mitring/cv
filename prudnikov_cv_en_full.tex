@@ -1,0 +1,46 @@
+\documentclass[10pt,a4paper,roman]{moderncv}
+
+% moderncv themes
+\moderncvstyle{casual}
+\moderncvcolor{blue}
+\renewcommand{\familydefault}{\rmdefault}
+
+% character encoding
+\usepackage[T1]{fontenc}
+\usepackage[utf8x]{inputenc}
+\usepackage[russian]{babel}
+\usepackage{pscyr}
+\usepackage{cmap}
+
+% adjust the page margins
+\usepackage[scale=0.85]{geometry}
+
+%\addtolength{\hintscolumnwidth}{15.0pt}
+%\addtolength{\maincolumnwidth}{-15.0pt}
+
+\input{contact_en}
+\extrainfo{\href{https://raw.github.com/mitring/cv/master/prudnikov_cv_en_short.pdf}{\underline{Short version}}, 
+           \href{https://raw.github.com/mitring/cv/master/prudnikov_cv_ru_full.pdf}{\underline{Russian version}}}
+
+\begin{document}
+ 
+\makecvtitle
+
+\input{pers_en}
+
+\input{edu_en}
+
+\input{exp_en_short}
+
+\input{skill_en}
+
+\input{cert_en}
+
+\input{lang_en}
+
+\renewcommand{\refname}{Publications and Presentations}
+\nocite{*}
+\bibliographystyle{unsrt}
+\bibliography{publications_en}
+
+\end{document}
