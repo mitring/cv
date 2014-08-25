@@ -6,14 +6,18 @@
 \renewcommand{\familydefault}{\rmdefault}
 
 % character encoding
-\usepackage[T1]{fontenc}
+\usepackage[T1,T2A]{fontenc}
 \usepackage[utf8x]{inputenc}
-\usepackage[russian]{babel}
+\usepackage[english]{babel}
 \usepackage{pscyr}
 \usepackage{cmap}
 
 % adjust the page margins
 \usepackage[scale=0.85]{geometry}
+\AtBeginDocument{\recomputelengths}
+
+\usepackage{lastpage}
+\rfoot{\textit{\thepage/\pageref{LastPage}}}
 
 %\addtolength{\hintscolumnwidth}{15.0pt}
 %\addtolength{\maincolumnwidth}{-15.0pt}
