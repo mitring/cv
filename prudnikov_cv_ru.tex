@@ -1,0 +1,54 @@
+\documentclass[10pt,a4paper,roman]{moderncv}
+
+% moderncv themes
+\moderncvstyle{casual}
+\moderncvcolor{blue}
+\renewcommand{\familydefault}{\rmdefault}
+
+% character encoding
+\usepackage[T1,T2A]{fontenc}
+\usepackage[utf8x]{inputenc}
+\usepackage[english,russian]{babel}
+\usepackage{pscyr}
+\usepackage{cmap}
+
+% adjust the page margins
+\usepackage[scale=0.85]{geometry}
+\AtBeginDocument{\recomputelengths}
+
+\usepackage{lastpage}
+\rfoot{\textit{\thepage/\pageref{LastPage}}}
+
+\usepackage{xpatch}
+\xpatchcmd{\cventry}{.\strut}{\strut}{}{}
+
+%\addtolength{\hintscolumnwidth}{15.0pt}
+%\addtolength{\maincolumnwidth}{-15.0pt}
+
+\input{contact_ru}
+\extrainfo{\href{https://raw.github.com/mitring/cv/master/prudnikov_cv_en.pdf}{\underline{English version}}}
+
+\begin{document}
+ 
+\makecvtitle
+
+\input{pers_ru}
+
+\input{edu_ru}
+
+\input{exp_ru}
+
+\input{skill_ru}
+
+\input{cert_ru}
+
+\input{learn_ru}
+
+\input{lang_ru}
+
+\renewcommand{\refname}{Публикации, конференции}
+\nocite{*}
+\bibliographystyle{ugost2008}
+\bibliography{publications}
+
+\end{document}
