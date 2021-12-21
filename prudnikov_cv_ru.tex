@@ -1,49 +1,21 @@
-\documentclass[10pt,a4paper,roman]{moderncv}
+\documentclass[11pt,a4paper,roman]{moderncv}
 
 % moderncv themes
 \moderncvstyle{casual}
 \moderncvcolor{blue}
-\newcommand*\skypesocialsymbol{{\faSkype~}}
-\newcommand*\stackoverflowsocialsymbol{{\faStackOverflow~}}
 \renewcommand{\familydefault}{\rmdefault}
-
-\newcommand*{\hlink}[2][]{%
-	\ifthenelse{\equal{#1}{}}%
-	{\href{#2}{#2}}%
-	{\href{#2}{#1}}}
-
-\RenewDocumentCommand{\social}{O{}O{}m}{%
-	\ifthenelse{\equal{#2}{}}%
-	{%
-		\ifthenelse{\equal{#1}{linkedin}}{\collectionadd[linkedin]{socials}{\protect\httplink[#3]{www.linkedin.com/in/#3}}} {}%
-		\ifthenelse{\equal{#1}{github}}  {\collectionadd[github]{socials}  {\protect\httplink[#3]{www.github.com/#3}}}      {}%
-		\ifthenelse{\equal{#1}{skype}}   {\collectionadd[skype]{socials}   {\protect\hlink[#3]{skype:#3?chat}}}             {}%
-	}
-	{\collectionadd[#1]{socials}{\protect\httplink[#3]{#2}}}}
 
 % character encoding
 \usepackage[T1,T2A]{fontenc}
 \usepackage[utf8x]{inputenc}
 \usepackage[english,russian]{babel}
-\usepackage{pscyr}
-\usepackage{cmap}
-\usepackage{fontawesome}
 
 % adjust the page margins
 \usepackage[scale=0.85]{geometry}
-\AtBeginDocument{\recomputelengths}
-
-\usepackage{lastpage}
-\rfoot{\textit{\thepage/\pageref{LastPage}}}
-
-\usepackage{xpatch}
-\xpatchcmd{\cventry}{.\strut}{\strut}{}{}
-
-%\addtolength{\hintscolumnwidth}{15.0pt}
-%\addtolength{\maincolumnwidth}{-15.0pt}
+\setlength{\footskip}{54.40001pt}
 
 \input{contact_ru}
-\extrainfo{\href{https://github.com/mitring/cv/raw/master/prudnikov_cv_en.pdf}{\underline{English version}}}
+%\extrainfo{\href{https://github.com/mitring/cv/raw/master/prudnikov_cv_en.pdf}{\underline{English version}}}
 
 \begin{document}
  
